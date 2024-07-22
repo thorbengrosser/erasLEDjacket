@@ -49,9 +49,9 @@ void loop(void) {
   Serial.print("ADC3: "); Serial.println(adc3);
 
   // Map the adjusted ADC values to RGB values (0-255)
-  int red = (adc1 >= 23500) ? 0 : map(adc1, 21000, 23500, 255, 0);   // Corrected to use ADC1 for red
-  int green = (adc3 >= 23500) ? 0 : map(adc3, 10000, 23500, 255, 0); // Corrected to use ADC3 for green
-  int blue = (adc2 >= 23500) ? 0 : map(adc2, 18000, 23500, 255, 0);  // Corrected to use ADC2 for blue
+  int red = (adc3 >= 23500) ? 0 : map(adc3, 10000, 23500, 255, 0);   // Corrected to use ADC3 for red
+  int green = (adc2 >= 23500) ? 0 : map(adc2, 18000, 23500, 255, 0); // Corrected to use ADC2 for green
+  int blue = (adc1 >= 23500) ? 0 : map(adc1, 21000, 23500, 255, 0);  // Corrected to use ADC1 for blue
 
   // Constrain the values to ensure they stay within 0-255
   red = constrain(red, 0, 255);
