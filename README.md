@@ -26,7 +26,7 @@ Hello, I'm Thorben. I'm a Swifty, and I made a special outfit for the Eras Tour.
 
 ## Schematics
 
-Please refer to the `schematics.png` file in this repository for a detailed wiring diagram.
+Please refer to the `schematic.png` file in this repository for a detailed wiring diagram.
 
 ## Installation
 
